@@ -15,7 +15,7 @@ import java.util.List;
 import java.time.*;
 
 /**
- *  Acts as an interface between our application and our database, accessing and modifying Appointment records
+ *  Acts as an interface between application and database, facilitating access and modification of Appointment records
  */
 
 public class AppointmentsDAO implements DAO<Appointment> {
