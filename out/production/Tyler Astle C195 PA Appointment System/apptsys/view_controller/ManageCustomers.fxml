@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="apptsys.view_controller.ManageCustomersController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="1000.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="BOTTOM" layoutX="343.0" layoutY="14.0" prefHeight="17.0" prefWidth="362.0" text="APPOINTMENT SCHEDULING SYSTEM" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TableView fx:id="custTable" layoutX="28.0" layoutY="76.0" prefHeight="250.0" prefWidth="950.0" style="-fx-border-color: black; -fx-border-width: 2;">
+              <columns>
+                <TableColumn fx:id="custIDColumn" prefWidth="40.0" text="ID" />
+                <TableColumn fx:id="custNameColumn" prefWidth="130.0" text="Name" />
+                  <TableColumn fx:id="custAddressColumn" prefWidth="129.0" text="Address" />
+                  <TableColumn fx:id="custPostalCodeColumn" prefWidth="76.0" text="Postal Code" />
+                  <TableColumn fx:id="custPhoneColumn" prefWidth="62.0" text="Phone" />
+                  <TableColumn fx:id="creationDateColumn" minWidth="0.0" prefWidth="99.0" text="Creation Date" />
+                  <TableColumn fx:id="createdByColumn" prefWidth="106.0" text="Created By" />
+                  <TableColumn fx:id="lastUpdateColumn" prefWidth="158.0" text="Last Update" />
+                  <TableColumn fx:id="updatedByColumn" prefWidth="82.0" text="Updated By" />
+                  <TableColumn fx:id="divisionIDColumn" prefWidth="62.0" text="Div. ID" />
+              </columns>
+            </TableView>
+            <Label layoutX="484.0" layoutY="51.0" text="Customers">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="addCustButton" layoutX="182.0" layoutY="355.0" mnemonicParsing="false" onAction="#onAddCust" prefHeight="25.0" prefWidth="162.0" text="Add" />
+            <Button fx:id="updateCustButton" layoutX="443.0" layoutY="355.0" mnemonicParsing="false" onAction="#onUpdateCust" prefHeight="25.0" prefWidth="162.0" text="Update" />
+            <Button fx:id="deleteCustButton" layoutX="704.0" layoutY="355.0" mnemonicParsing="false" onAction="#onDeleteCust" prefHeight="25.0" prefWidth="162.0" text="Delete" />
+            <Pane fx:id="modifyDataPane" disable="true" layoutX="28.0" layoutY="395.0" prefHeight="196.0" prefWidth="950.0">
+               <children>
+                  <TextField fx:id="custNameField" alignment="CENTER" layoutX="105.0" layoutY="29.0" prefHeight="30.0" prefWidth="171.0" promptText="Name" />
+                  <TextField fx:id="custAddressField" alignment="CENTER" layoutX="22.0" layoutY="74.0" prefHeight="30.0" prefWidth="356.0" promptText="Address" />
+                  <TextField fx:id="custPostalCodeField" alignment="CENTER" layoutX="402.0" layoutY="74.0" prefHeight="30.0" prefWidth="115.0" promptText="Postal Code" />
+                  <TextField fx:id="custPhoneField" alignment="CENTER" layoutX="302.0" layoutY="29.0" prefHeight="30.0" prefWidth="215.0" promptText="Phone Number" />
+                  <ComboBox fx:id="countryComboBox" layoutX="22.0" layoutY="118.0" onAction="#onCountryBox" prefHeight="30.0" prefWidth="189.0" promptText="Country" />
+                  <ComboBox fx:id="divisionComboBox" layoutX="236.0" layoutY="118.0" prefHeight="30.0" prefWidth="283.0" promptText="Division" />
+                  <Button fx:id="saveCustButton" layoutX="642.0" layoutY="67.0" mnemonicParsing="false" onAction="#onSaveCust" prefHeight="30.0" prefWidth="74.0" text="Save" />
+                  <Button fx:id="cancelButton" layoutX="746.0" layoutY="67.0" mnemonicParsing="false" onAction="#onCancelCust" prefHeight="30.0" prefWidth="74.0" text="Cancel" />
+                  <TextField fx:id="custIDField" alignment="CENTER" editable="false" focusTraversable="false" layoutX="45.0" layoutY="29.0" opacity="0.69" prefHeight="30.0" prefWidth="38.0" style="-fx-background-color: lightgray; -fx-font-weight: bold;" text="N/A">
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor></TextField>
+                  <Label layoutX="22.0" layoutY="32.0" text="ID: ">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="returnToMainButton" layoutX="28.0" layoutY="32.0" mnemonicParsing="false" onAction="#onReturnToMain" text="&lt;-- Return to Main" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

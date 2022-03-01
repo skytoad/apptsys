@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view_controller.LogInController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="250.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="BOTTOM" layoutX="119.0" layoutY="14.0" prefHeight="17.0" prefWidth="362.0" text="APPOINTMENT SCHEDULING SYSTEM" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="BOTTOM" layoutX="119.0" layoutY="50.0" prefHeight="17.0" prefWidth="362.0" text="Client connecting from:" textAlignment="CENTER">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userIDField" alignment="CENTER" layoutX="181.0" layoutY="99.0" onKeyPressed="#onUserIDPressed" prefHeight="25.0" prefWidth="239.0" promptText="USER ID" />
+            <TextField fx:id="passwordField" alignment="CENTER" layoutX="181.0" layoutY="130.0" onKeyPressed="#onPassPressed" prefHeight="25.0" prefWidth="239.0" promptText="PASSWORD" />
+            <Button fx:id="LogInButton" alignment="CENTER" contentDisplay="CENTER" layoutX="256.0" layoutY="164.0" mnemonicParsing="false" onAction="#onLogInButton" prefHeight="25.0" prefWidth="90.0" text="CONNECT" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
