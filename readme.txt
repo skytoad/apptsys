@@ -1,5 +1,5 @@
 TYLER ASTLE'S APPOINTMENT SCHEDULING SYSTEM
-Tyler Astle t.froggy@gmail.com [studentapplicationversion] 10/01/2021
+Tyler Astle t.froggy@gmail.com 10/01/2021
 IntelliJ 2021.1.1, Java SE 11.0.11, JavaFX SDK 11.0.2
 MySQL Connector v8.0.25
 
