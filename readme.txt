@@ -17,7 +17,7 @@ Manage Appointments allows you to add, update, and delete appointment records.
 
 View Reports allows you to view three unique reports, providing insight to your database.
 In addition the two pre-defined reports, I implemented the "Customers by Country" report that will
-give valuable business insight on where customers are located.
+give valuable business insight on where customers are located. 
 
 
 
